@@ -25,6 +25,12 @@ Ansible v2.7.0 is failing and/or produce unexpected results due to [ansible/ansi
 
 #### Usage
 
+    # git clone url 
+    git clone ....
+   
+    # cd Kubespray
+    cd kubespray
+
     # Install dependencies from ``requirements.txt``
     sudo pip install -r requirements.txt
 
