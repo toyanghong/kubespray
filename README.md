@@ -32,7 +32,8 @@ Ansible v2.7.0 is failing and/or produce unexpected results due to [ansible/ansi
     cp -rfp inventory/sample inventory/mycluster
 
     # Update Ansible inventory file with inventory builder
-    declare -a IPS=(10.10.1.3 10.10.1.4 10.10.1.5)
+    跳过
+    declare -a IPS=(10.10.1.3 10.10.1.4 10.10.1.5) 
     CONFIG_FILE=inventory/mycluster/hosts.ini python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 
     # Review and change parameters under ``inventory/mycluster/group_vars``
@@ -43,6 +44,7 @@ Ansible v2.7.0 is failing and/or produce unexpected results due to [ansible/ansi
     # The option `-b` is required, as for example writing SSL keys in /etc/,
     # installing packages and interacting with various systemd daemons.
     # Without -b the playbook will fail to run!
+    直接编辑inventory/mycluster/hosts.ini
     ansible-playbook -i inventory/mycluster/hosts.ini --become --become-user=root cluster.yml
 
 Note: When Ansible is already installed via system packages on the control machine, other python packages installed via `sudo pip install -r requirements.txt` will go to a different directory tree (e.g. `/usr/local/lib/python2.7/dist-packages` on Ubuntu) from Ansible's (e.g. `/usr/lib/python2.7/dist-packages/ansible` still on Ubuntu).
