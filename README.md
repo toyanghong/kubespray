@@ -1,4 +1,4 @@
-＃安装方法见gitlab.com 安装方法见gitlab.com 安装方法见gitlab.com
+# 安装方法见gitlab.com 安装方法见gitlab.com 安装方法见gitlab.com 
 
 ![Kubernetes Logo](https://raw.githubusercontent.com/kubernetes-sigs/kubespray/master/docs/img/kubernetes-logo.png)
 
